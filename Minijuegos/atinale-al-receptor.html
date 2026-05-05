@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atínale al receptor</title>
+    <link rel="stylesheet" href="../CSS/aar.css">
+</head>
+
+<body class="aar-page">
+
+    <header class="aar-header">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../minijuegos.html">Minijuegos</a>
+        </nav>
+        <h1>Atínale al receptor</h1>
+    </header>
+
+    <main class="aar-shell">
+        <section id="aar-intro" class="aar-panel">
+            <p class="aar-kicker">Mecanismos y blancos</p>
+            <h2>Guía el fármaco al blanco correcto</h2>
+            <p>En este minijuego se te asignará un punto de color aleatorio, el cual representa un fármaco específico. El nombre del fármaco se mostrará al inicio.</p>
+            <p>El punto comenzará a descender lentamente por la pantalla. Tu objetivo es guiar el punto hacia el receptor, canal o transportador correcto con el que interactúa ese fármaco.</p>
+            <p><strong>Dinámica del juego:</strong></p>
+            <ul class="aar-list">
+                <li>Podrás mover el punto para dirigirlo hacia la opción correcta.</li>
+                <li>Existen múltiples objetivos en pantalla, correspondientes a los 12 mecanismos de acción vistos en la sección de fármacos.</li>
+                <li>Debes lograr que el punto llegue al receptor correcto antes de que termine el recorrido.</li>
+            </ul>
+            <p><strong>Resultados:</strong></p>
+            <ul class="aar-list">
+                <li>Si eliges correctamente, obtendrás puntos y una confirmación positiva.</li>
+                <li>Si eliges incorrectamente, se te indicará el error y se mostrará la opción correcta para reforzar el aprendizaje.</li>
+            </ul>
+            <p><strong>Al finalizar:</strong></p>
+            <ul class="aar-list">
+                <li>Se mostrará tu puntaje total.</li>
+                <li>Podrás repetir el minijuego para mejorar tu precisión.</li>
+            </ul>
+            <button id="aar-start" class="aar-main-btn">Iniciar</button>
+        </section>
+
+        <section id="aar-preview" class="aar-panel aar-preview hidden">
+            <p class="aar-kicker">Nueva ronda</p>
+            <h2 id="aar-preview-title">Tu fármaco es:</h2>
+            <div class="aar-preview-token-wrap">
+                <div id="aar-preview-token" class="aar-preview-token"></div>
+            </div>
+            <div id="aar-preview-images" class="aar-preview-images"></div>
+            <div id="aar-preview-name" class="aar-preview-name"></div>
+            <div class="aar-actions aar-preview-actions">
+                <button id="aar-preview-start" class="aar-main-btn">Comenzar ronda</button>
+            </div>
+        </section>
+
+        <section id="aar-game" class="aar-panel hidden">
+            <div class="aar-topbar">
+                <span id="aar-round">Ronda 1 de 10</span>
+                <span id="aar-score">Puntos: 0</span>
+            </div>
+            <div class="aar-drugline">
+                <strong>Fármaco actual:</strong>
+                <span id="aar-drug-name"></span>
+            </div>
+            <p class="aar-helper">Mueve el punto solo con las flechas del teclado y hazlo caer sobre el blanco correcto mientras la pantalla acompaña el descenso.</p>
+
+            <div id="aar-arena" class="aar-arena">
+                <img src="../Ilustraciones/Neurona.jpeg" alt="Neurona" class="aar-bg">
+                <div id="aar-point" class="aar-point"></div>
+                <div id="aar-targets" class="aar-targets"></div>
+            </div>
+
+            <div class="aar-touch-controls" aria-label="Controles tactiles">
+                <button id="aar-touch-left" type="button">&larr;</button>
+                <button id="aar-touch-enter" type="button">Enter</button>
+                <button id="aar-touch-right" type="button">&rarr;</button>
+            </div>
+
+            <div id="aar-feedback" class="aar-feedback"></div>
+            <div class="aar-actions">
+                <button id="aar-next" class="aar-main-btn hidden">Siguiente ronda</button>
+            </div>
+        </section>
+
+        <section id="aar-results" class="aar-panel hidden">
+            <p class="aar-kicker">Resultado final</p>
+            <h2 id="aar-final-score"></h2>
+            <p id="aar-final-summary"></p>
+            <div id="aar-review" class="aar-review"></div>
+            <div class="aar-actions aar-actions-double">
+                <button id="aar-home" class="aar-main-btn">Volver al inicio</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../JS/aar.js"></script>
+</body>
+</html>
+
+

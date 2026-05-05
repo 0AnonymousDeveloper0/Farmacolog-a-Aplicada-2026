@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etosuximida</title>
+    <link rel="stylesheet" href="../CSS/farmacos.css">
+</head>
+
+<body>
+
+<header class="header">
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="menu.html">Fármacos</a>
+    </nav>
+    <h1>Etosuximida</h1>
+</header>
+
+<main class="contenedor">
+
+    <section class="tarjeta-texto">
+        <p>
+            La etosuximida atraviesa la barrera hematoencefálica y alcanza el sistema nervioso central, donde ejerce su acción principalmente en neuronas del tálamo, que presentan una alta expresión de canales de Ca²⁺ tipo T en el soma y las dendritas proximales.
+        </p>
+
+        <p>
+            A nivel de la membrana neuronal, la etosuximida inhibe de manera selectiva la corriente de Ca²⁺ tipo T (I_T), disminuyendo la probabilidad de apertura de estos canales y reduciendo la conductancia al calcio.
+        </p>
+
+        <p>
+            Durante la fase de hiperpolarización inducida por la inhibición GABAérgica, los canales tipo T se desinactivan normalmente; la etosuximida no interfiere con este proceso, por lo que los canales permanecen disponibles para activarse.
+        </p>
+
+        <p>
+            Sin embargo, cuando ocurre la despolarización leve posterior que normalmente activaría estos canales, la presencia del fármaco limita su apertura, reduciendo significativamente la entrada transitoria de Ca²⁺ al citoplasma.
+        </p>
+
+        <p>
+            Como consecuencia, la despolarización de bajo umbral (low-threshold spike, LTS) se ve disminuida o no alcanza la amplitud necesaria. Al no generarse una LTS adecuada, no se alcanza el umbral requerido para activar repetidamente los canales de Na⁺ dependientes de voltaje, por lo que se inhibe la descarga en ráfaga (burst firing) característica de las neuronas talámicas.
+        </p>
+
+        <p>
+            Al impedir la generación de estas ráfagas, se interrumpe la oscilación rítmica del circuito tálamo-cortical, lo que evita la sincronización neuronal responsable de las descargas punta-onda de aproximadamente 3 Hz observadas en las crisis de ausencia.
+        </p>
+
+        <p>
+            Como resultado final, la etosuximida suprime el mecanismo eléctrico que mantiene las crisis de ausencia, con un efecto relativamente selectivo sobre este circuito en comparación con otros anticonvulsivos.
+        </p>
+    </section>
+
+    <!-- BOTON RESUMEN -->
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="btn-resumen">Resumen</label>
+
+    <div class="resumen">
+        <div class="tarjeta-texto tarjeta-resumen">
+        <p>
+            La etosuximida actúa principalmente en las neuronas del tálamo inhibiendo los canales de Ca²⁺ tipo T, que son fundamentales para generar las descargas rítmicas características de las crisis de ausencia. Aunque durante la hiperpolarización inducida por el GABA estos canales se desactivan normalmente y quedan listos para activarse, la etosuximida reduce su probabilidad de apertura cuando ocurre la despolarización leve posterior. Esto disminuye la entrada transitoria de calcio (corriente I_T), debilitando o evitando la formación del low-threshold spike (LTS).
+        </p>
+
+        <p>
+            Al no generarse una LTS adecuada, no se alcanza el umbral necesario para activar repetidamente los canales de sodio, por lo que se inhibe la descarga en ráfaga (burst firing) de las neuronas talámicas. Como consecuencia, se interrumpe la oscilación rítmica del circuito tálamo-cortical y se evita la sincronización neuronal que produce las descargas punta-onda de aproximadamente 3 Hz. De esta manera, la etosuximida suprime de forma relativamente selectiva el mecanismo eléctrico que mantiene las crisis de ausencia.
+        </p>
+        </div>
+    </div>
+
+    <section class="audio-farmaco" aria-labelledby="audio-etosuximida">
+        <h2 id="audio-etosuximida">Audio explicativo</h2>
+        <audio controls src="../Audios/Etosuximida_AUDIO.mp3">
+            Tu navegador no puede reproducir este audio.
+        </audio>
+    </section>
+
+    <section class="galeria-farmaco" aria-labelledby="galeria-etosuximida">
+        <h2 id="galeria-etosuximida">Material visual</h2>
+
+        <figure class="imagen">
+            <img src="../Ilustraciones/etosuximida_e.png" alt="Esquema de etosuximida">
+            <figcaption>Estructura de la Etosuximida</figcaption>
+        </figure>
+
+        <figure class="imagen">
+            <img src="../Ilustraciones/etosuximida_mc.png" alt="Mecanismo de acción de la etosuximida">
+            <figcaption>Mecanismo de acción de la Etosuximida</figcaption>
+        </figure>
+    </section>
+
+</main>
+
+</body>
+</html>
+
+
