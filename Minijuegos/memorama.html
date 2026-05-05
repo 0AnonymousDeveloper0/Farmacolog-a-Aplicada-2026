@@ -1,0 +1,55 @@
+�<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorama farmacológico</title>
+    <link rel="stylesheet" href="../CSS/memorama.css">
+</head>
+
+<body class="memory-page">
+    <header class="memory-header">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../minijuegos.html">Minijuegos</a>
+        </nav>
+        <h1>Memorama farmacológico</h1>
+    </header>
+
+    <main class="memory-shell">
+        <section id="memory-intro" class="memory-panel">
+            <p class="memory-kicker">Parejas de mecanismos</p>
+            <h2>Encuentra la estructura correcta</h2>
+            <p>Este memorama relaciona el nombre de cada fármaco con su estructura química.</p>
+            <ul class="memory-list">
+                <li>Voltea dos cartas por turno.</li>
+                <li>Si el nombre coincide con su estructura, la pareja queda fija.</li>
+                <li>Si no coincide, las cartas vuelven a ocultarse.</li>
+                <li>Hay 16 fármacos disponibles y en cada partida se eligen 12 pares al azar.</li>
+            </ul>
+            <button id="memory-start" class="memory-main-btn">Iniciar</button>
+        </section>
+
+        <section id="memory-game" class="memory-panel hidden">
+            <div class="memory-topbar">
+                <span id="memory-pairs">Parejas: 0 de 12</span>
+                <span id="memory-moves">Intentos: 0</span>
+            </div>
+            <div id="memory-board" class="memory-board"></div>
+            <div id="memory-feedback" class="memory-feedback">Voltea dos cartas para encontrar una pareja.</div>
+        </section>
+
+        <section id="memory-results" class="memory-panel hidden">
+            <p class="memory-kicker">Resultado final</p>
+            <h2 id="memory-final-score">Completaste 12 parejas</h2>
+            <p id="memory-final-summary"></p>
+            <div id="memory-review" class="memory-review"></div>
+            <button id="memory-home" class="memory-main-btn">Regresar al inicio</button>
+        </section>
+    </main>
+
+    <script src="../JS/memorama.js"></script>
+</body>
+</html>
+
+
